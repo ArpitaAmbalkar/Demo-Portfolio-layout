@@ -31,9 +31,8 @@ ul{
   
 }
 ul a{
-    font-weight: 700;
+    font-weight: 600;
     color:rgb(6, 6, 6);
-    font-size: 19px;
     margin-right: 20px;
     font-size: 18px;
 }
@@ -118,9 +117,26 @@ h3 {
     }
 }
 @media (max-width:700px){
-    
+    #hi{
+        display:none;
+    }
+    /*#bar{
+        display:block;
+    }*/
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .section-title h2{
+        margin-top: 30px;
+    }
+     footer ul{
+        flex-direction: column;
+    };
     nav ul li a{
-        font-size: 16px;
+        font-size: 15px;
+        font-weight: 400;
         margin-right: 5px;
     }
     .project-list{
@@ -138,7 +154,7 @@ h3 {
 
     nav{
         width: 100%;
-        height: auto;
+        height: 100%;
         flex-direction: column;
        align-items: center;
     }
@@ -193,11 +209,18 @@ h3 {
         margin-top: 10px;
     }
     nav{
-        height:300px;
+        height:150px;
+    }
+    nav ul a{
+        font-weight: 100;
     }
     .about-image img{
         height:100px;
     }
+    .info img{
+        margin-top: 150px;
+    }
+   
 
 }
 
@@ -220,10 +243,15 @@ footer h4{
 }
 
 /*HOME PAGE*/
+#bar{
+    margin-right: 50px;
+    display: none;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
-    height:80px;
+    /*height:80px;*/
     align-items:center ;
     position: fixed;
     width:100%;
@@ -245,9 +273,9 @@ nav h2{
     text-align: center;
 }
 .info img{
-    margin-top: 90px;
-    width: 50%;
-    height:60%;
+    margin-top: 150px;
+    width: 45%;
+    height:35%;
    align-self: center;
 }
 /*PROJECT SECTION*/
@@ -474,9 +502,29 @@ form{
 /*FOOTER SECTION*/
 
 footer{
+    padding-top: 30px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    /*background-color: #0C2B4E;*/
 }
+footer ul{
+    display: flex;
+    justify-content: center;
 
+}
+footer ul a{
+    font-weight: 300;
+}
+.social-icons a {
+    margin-left: 20px;
+    font-size: 22px;
+    
+}
+.social-icons a:hover{
+    color:lime;
+}
 /*COLOR CHANGE*/
 .highlight{
     color: cadetblue;
